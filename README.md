@@ -9,7 +9,6 @@ Further theoretical background informations and technical details are provided i
 
 ### File Structure
 ```txt
-
 [MLSP]Project_Vincelli_(tensorflow).ipynb
 
 ├── Report                   - Brief introduction of theory, motivations and proposed solution
