@@ -9,20 +9,30 @@ Further theoretical background informations and technical details are provided i
 
 ### File Structure
 ```txt
-hand_networks/
-├── README.md                   - Installation and execution procedures, description of code modules and ouput
-├── data/
-│   ├── nodePos.mat             - Contains the pixel positions of the electrodes used to plot graph 
-│   ├── locations.mat           - Contains the variables for measurement systems of 64 channel data format
-│   ├── S001R03.edf             - Contains dataset of open and close left or right fist (LHM, RHM)
-│   ├── S001R04.edf             - Contains dataset of imagine opening and closing left or right fist (LHI, RHI)
-│   ├── S001R07.edf             - Contains dataset of open and close left or right fist (LHM, RHM)
-│   ├── S001R08.edf             - Contains dataset of imagine opening and closing left or right fist (LHI, RHI)
-│   ├── S001R11.edf             - Contains dataset of open and close left or right fist (LHM, RHM)
-│   └── S001R12.edf             - Contains dataset of imagine opening and closing left or right fist (LHI, RHI)
+[MLSP]Project_Vincelli_(tensorflow).ipynb
+├── Report                   - Brief introduction of theory, motivations and proposed solution
+├── Dependencies             - Installation of required packages
+├── Implementation
+│   ├── Data preprocessing      
+│   ├── Data generator and visualization          
+│   ├── Training and testing utility function            
+│   ├── Data analysis and exploration            
+│   └── Acoustic features for ASR             
 │
-├── code/
-│   ├── main.m                  - Main file which is to be run to compute the entire routine
+├── Models
+│   ├── Temporal convolutional model                  
+│   │   ├── Version_1                                 - With MLP classifier
+│   │   └── Version_2                                 - 'Pure' CNN model
+│   └── Residual convolutional model                  
+│
+├── Experimental evaluation
+│   ├── ResNet-Quaternion-valued                
+│   │   ├── Setup_1                                
+│   │   └── Setup_2                                
+│   │   
+│   ├── TCN-Quaternion-valued
+│   │   ├── Setup_1                             
+│   │   └── Setup_2                                
 ```
 
 ### Documentation
