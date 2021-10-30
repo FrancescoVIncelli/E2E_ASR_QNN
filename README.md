@@ -3,6 +3,10 @@ The repository contains two Google Colaboratory notebooks implementing the proje
 Further theoretical background informations and technical details are provided in detail in the *Report* section in the [MLSP]Project_Vincelli_(tensorflow).ipynb Colaboratoy notebook.
 
 ### Dataset
+LibriSpeech is a corpus of approximately 1000 hours of 16kHz read English speech, prepared by Vassil Panayotov with the assistance of Daniel Povey. The data is derived from read audiobooks from the LibriVox project, and has been carefully segmented and aligned.
+[train-clean-100.tar.gz](https://www.openslr.org/resources/12/train-clean-100.tar.gz)
+[dev-clean.tar.gz](https://www.openslr.org/resources/12/dev-clean.tar.gz)
+[test-clean.tar.gz](https://www.openslr.org/resources/12/test-clean.tar.gz)
 
 
 ### Installation Procedure
