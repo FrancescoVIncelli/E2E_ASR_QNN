@@ -3,8 +3,8 @@ The repository contains two Google Colaboratory notebooks implementing the proje
 Further theoretical background informations and technical details are provided in detail in the *Report* section in the [MLSP]Project_Vincelli_(tensorflow).ipynb Colaboratoy notebook.
 
 ### Dataset
-LibriSpeech is a corpus of approximately 1000 hours of 16kHz read English speech, prepared by Vassil Panayotov with the assistance of Daniel Povey. The data is derived from read audiobooks from the LibriVox project, and has been carefully segmented and aligned.
-
+The experiments described below are performed on the LibriSpeech ASR Corpus. The LibriSpeech corpus is a collection of approximately 1,000 hours of audiobooks that are a part of the LibriVox project. Most of the audiobooks come from the Project Gutenberg. The training data is split into 3 partitions of 100hr, 360hr, and 500hr sets while the dev and test data are split into the ’clean’ and ’other’ categories, respectively.
+Below the data archives used for the training and testing of the asr models are reported:  
 [train-clean-100.tar.gz](https://www.openslr.org/resources/12/train-clean-100.tar.gz)  
 [dev-clean.tar.gz](https://www.openslr.org/resources/12/dev-clean.tar.gz)  
 [test-clean.tar.gz](https://www.openslr.org/resources/12/test-clean.tar.gz)
