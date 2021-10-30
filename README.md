@@ -13,9 +13,9 @@ LibriSpeech is a corpus of approximately 1000 hours of 16kHz read English speech
 ### Installation Procedure
 
 ### File Structure
-```txt
-[MLSP]Project_Vincelli_(tensorflow).ipynb
+The two notebook files containing the entire project code show the following structure (some differences related to the deep learning framework used are highlithed)
 
+```txt
 ├── Report                   - Brief introduction of theory, motivations and proposed solution
 ├── Dependencies             - Installation of required packages
 ├── Implementation
@@ -26,19 +26,33 @@ LibriSpeech is a corpus of approximately 1000 hours of 16kHz read English speech
 │   └── Acoustic features for ASR             
 │
 ├── Models
+│   ==== [TensorFlow] ====
 │   ├── Temporal convolutional model                  
-│   │   ├── Version_1                                 - With MLP classifier
-│   │   └── Version_2                                 - 'Pure' CNN model
-│   └── Residual convolutional model                  
+│   │   ├── TCN + MLP classifier (Real/Quaternion-valued)                               
+│   │   └── TCN 'pure' convolutional model (Real/Quaternion-valued)                              
+│   └── Residual Convolutional-TimeDistributed model (Real/Quaternion-valued)               
+│
+│   ==== [PyTorch] ====
+│   ├── Temporal convolutional model                  
+│   ├── Residual convolutional model     
+│   │   ├── Real-valued 1D/2D Convolutional model
+│   │   ├── Quaternion-valued Conv-1D (Orkis library)
+│   │   └── Quaternion-valued Conv-1D (Speechbrain library)
 │
 ├── Experimental evaluation
+│   ├── ResNet-Real-valued                
+│   │   ├── Training setup #1                                
+│   │   └── Training setup #2       
 │   ├── ResNet-Quaternion-valued                
-│   │   ├── Setup_1                                
-│   │   └── Setup_2                                
+│   │   ├── Training setup #1                                 
+│   │   └── Training setup #2  
 │   │   
-│   ├── TCN-Quaternion-valued
-│   │   ├── Setup_1                             
-│   │   └── Setup_2                                
+│   ├── TCN-Real-valued
+│   │   ├── Training setup #1                              
+│   │   └── Training setup #2  
+│   ├── ResNet-Quaternion-valued                
+│   │   ├── Training setup #1                                 
+│   │   └── Training setup #2  
 ```
 
 ### Documentation
