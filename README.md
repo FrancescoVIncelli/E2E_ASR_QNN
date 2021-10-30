@@ -5,9 +5,9 @@ Further theoretical background informations and technical details are provided i
 ### Dataset
 The experiments described below are performed on the LibriSpeech ASR Corpus. The LibriSpeech corpus is a collection of approximately 1,000 hours of audiobooks that are a part of the LibriVox project. Most of the audiobooks come from the Project Gutenberg. The training data is split into 3 partitions of 100hr, 360hr, and 500hr sets while the dev and test data are split into the ’clean’ and ’other’ categories, respectively.
 Below the data archives used for the training and testing of the asr models are reported:  
-[train-clean-100.tar.gz](https://www.openslr.org/resources/12/train-clean-100.tar.gz)  
-[dev-clean.tar.gz](https://www.openslr.org/resources/12/dev-clean.tar.gz)  
-[test-clean.tar.gz](https://www.openslr.org/resources/12/test-clean.tar.gz)
+[train-clean-100.tar.gz](https://www.openslr.org/resources/12/train-clean-100.tar.gz) (training set of 100 hours "clean" speech )  
+[dev-clean.tar.gz](https://www.openslr.org/resources/12/dev-clean.tar.gz) (development set, "clean" speech )  
+[test-clean.tar.gz](https://www.openslr.org/resources/12/test-clean.tar.gz) (test set, "clean" speech )  
 
 
 ### Installation Procedure
