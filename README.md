@@ -56,17 +56,17 @@ The two notebook files containing the entire project code show the following str
 ```
 
 ### Documentation
-This project perfroms a sequence of steps as shown below
-1. Three parameters `(Frequency1, Frequency2 and density)` are set
-2. The dataset is loaded using [dataset_load.m](code/dataset_load.m) script
-3. The pixel positions for plotting the graph is loaded which is stored as a `.mat` file using [get_node_pose.m](code/get_node_pose.m) script 
-4. The `run_routine` function is called multiple times by changing the dataset, frequecny and number of channels which performs a series of steps
-   1. Computes Multi-Variate Autoregressive model and then Partial Directed Coherence to obtain a 3D matrics. One frequency is choosen from the 3D matrics and converted to binary matrix by setting a threshold to obtain given density
-   2. Computes the local indices (in-degree, out-degree, degree, left and right hemisphere density)
-   3. Computes the global indices (global efficiency and local efficiency)
-   4. Computes the graph (edges and nodes) for plotting the graph
-   5. Stores all the obtained results into a data structure
-5. Finally, all the results are plotted by running their respective plot scripts
+The project implements real/quaternion-valued convolutional neural network models for the task of end-to-end automatic speech recognition on the LibriSpeech ASR corpus dataset.  
+
+Both the two notebooks provide with two model architectures respectively implemented using the TensorFlow and the PyTorch frameworks:
+- residual time-distributed network architecture
+- temporal convolutional architecture  
+
+Some changes and improvements of the network architectures are also experimented, defined different versions of the same architectures.  
+- The PyTorch notebook in particular shows an improvement of the ResNet architecture by employing real/quaternion-valued recurrent layers in the classification block on top of the network.  Moreover the LibriSpeech dataset is loaded using the torchaudio package utilities.
+- The TensorFlow notebook provides with a preliminary script that creates a .jsonl file for the training and the evaluation/test sets used in the features extraction procedure.  This process could require some time and for this reason the trainijng and validation .jsonl files are already provided in this repository.  
+
+Each of the notebooks also contains a preliminary section with a full and detailed analysis and visualization of the data used for the experimentations.  
 
 ### Execution of the code
 - The only file that is to be run is the [main.m](code/main.m) file. Make sure to select the current path to be [code](code/) before running the script
