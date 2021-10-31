@@ -69,11 +69,21 @@ Some changes and improvements of the network architectures are also experimented
 Each of the notebooks also contains a preliminary section with a full and detailed analysis and visualization of the data used for the experimentations.  
 
 ### Execution of the code
-- The only file that is to be run is the [main.m](code/main.m) file. Make sure to select the current path to be [code](code/) before running the script
-- The [main.m](code/main.m) file contains "Initialize Parameters" section where the frequencies and densities are to be set 
-- To get the plots, individual scripts have to be run to get degrees, densities and efficiency plots. Each of them has comparision functions in which individual samples can be comparte with the others. Make sure to uncomment the necessary plot before running the script. 
+Following they are provided the instructions to run the TensorFlow notebook, used to train the models and generate the experimental results described in the project presentation.
 
-### Limitations
-- The code is code to work for 21 channels and 64 channels. The indices should be updated if the number of channels are different
-- The project computes only the general kind of PDC (Baccalà and Sameshima, 2001) and one kind of normalization technique (Astolfi et al, 2007). Other PDC computation techniques can be implemented to get better results
-- All the plots are coded to work for only this application will have to be slightly modified based on the requirements. The functions are general which can be used for a differnt application with slight modification 
+**On Google Colaboratory**  
+
+1. Create a folder `LibriSpeech` including a Train, Valid and Test subfolders.
+2. Extract the data from the archives downloaded fromt the link provided in section [Dataset](#dataset) and put the train, validation and test dataset into the corrsponding subfolders of LibriSpeech directory.
+3. Upload the LibriSpeech dataset folder created in *step 1* into your Google Drive.
+4. Mount the Gogole Drive filesystem followig the procedure used in the notebook: change the path to the dataset folder if different names for the directories are used.
+5. Run the script to create the .jsonl files for train, validation and test set: be aware to change the name of the desired data set (train, validation, test) before to run the script.
+6. Run the other sections of the notebook to train the models and evaluate the results for each experiments.
+
+**On Jupiter**  
+
+1. Download or clone this repository in your system.
+2. Create a folder `LibriSpeech` including a Train, Valid and Test subfolders in the project directory.
+3. Extract the data from the archives downloaded fromt the link provided in section [Dataset](#dataset) and put the train, validation and test dataset into the corrsponding subfolders of LibriSpeech directory.
+5. Run the script to create the .jsonl files for train, validation and test set: be aware to change the name of the desired data set (train, validation, test) before to run the script.
+6. Run the other sections of the notebook to train the models and evaluate the results for each experiments.
