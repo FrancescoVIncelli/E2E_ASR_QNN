@@ -63,13 +63,13 @@ Both the two notebooks provide with two model architectures respectively impleme
 - temporal convolutional architecture  
 
 Some improvements of the network architectures are also experimented, defining different versions of the same architectures.  
-The PyTorch notebook in particular shows an improvement of the ResNet architecture by employing real/quaternion-valued recurrent layers in the classification block on top of the network.  Moreover the LibriSpeech dataset is loaded using the torchaudio package utilities.  
+The PyTorch notebook in particular shows an improvement of the ResNet architecture by employing real/quaternion-valued recurrent layers in the classification block on top of the network.  Moreover the LibriSpeech dataset is loaded and processed using the torchaudio package utilities.  
 The TensorFlow notebook provides with a preliminary script that creates a .jsonl file for the training and the evaluation/test sets used in the features extraction procedure.  This process could require some time and for this reason the training and validation .jsonl files are already provided in this repository.  
 
 Each of the notebooks also contains a preliminary section with a full and detailed analysis and visualization of the data used for the experimentations.  
 
 ### Execution of the code
-Following they are provided the instructions to run the TensorFlow notebook, used to train the models and generate the experimental results described in the project presentation.
+In this section the instructions to run the TensorFlow notebook are reported. This notebook has been used to train the models whose training weights are stored in the folder 
 
 **On Google Colaboratory**  
 
