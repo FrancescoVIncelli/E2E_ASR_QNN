@@ -1,6 +1,6 @@
 # End-to-End Automatic Speech Recognition using Quaternion Convolutional Neural Networks
 The repository contains two Google Colaboratory notebooks implementing the project respectively in the TensorFlow and PyTorch deep learning frameworks.
-Further theoretical background informations and technical details are provided in detail in the *Report* section in the [MLSP]Project_Vincelli_(tensorflow).ipynb Colaboratoy notebook.
+Further theoretical background informations and technical details are provided in the *Report* section in the [MLSP]Project_Vincelli_(tensorflow).ipynb Colaboratoy notebook.
 
 ### Dataset
 The experiments described below are performed on the LibriSpeech ASR Corpus. The LibriSpeech corpus is a collection of approximately 1,000 hours of audiobooks that are a part of the LibriVox project. Most of the audiobooks come from the Project Gutenberg. The training data is split into 3 partitions of 100hr, 360hr, and 500hr sets while the dev and test data are split into the ’clean’ and ’other’ categories, respectively.
@@ -59,12 +59,12 @@ The two notebook files containing the entire project code show the following str
 The project implements real/quaternion-valued convolutional neural network models for the task of end-to-end automatic speech recognition on the LibriSpeech ASR corpus dataset.  
 
 Both the two notebooks provide with two model architectures respectively implemented using the TensorFlow and the PyTorch frameworks:
-- residual time-distributed network architecture
+- residual time-distributed convolutional network architecture
 - temporal convolutional architecture  
 
-Some changes and improvements of the network architectures are also experimented, defined different versions of the same architectures.  
-- The PyTorch notebook in particular shows an improvement of the ResNet architecture by employing real/quaternion-valued recurrent layers in the classification block on top of the network.  Moreover the LibriSpeech dataset is loaded using the torchaudio package utilities.
-- The TensorFlow notebook provides with a preliminary script that creates a .jsonl file for the training and the evaluation/test sets used in the features extraction procedure.  This process could require some time and for this reason the trainijng and validation .jsonl files are already provided in this repository.  
+Some improvements of the network architectures are also experimented, defining different versions of the same architectures.  
+The PyTorch notebook in particular shows an improvement of the ResNet architecture by employing real/quaternion-valued recurrent layers in the classification block on top of the network.  Moreover the LibriSpeech dataset is loaded using the torchaudio package utilities.  
+The TensorFlow notebook provides with a preliminary script that creates a .jsonl file for the training and the evaluation/test sets used in the features extraction procedure.  This process could require some time and for this reason the training and validation .jsonl files are already provided in this repository.  
 
 Each of the notebooks also contains a preliminary section with a full and detailed analysis and visualization of the data used for the experimentations.  
 
