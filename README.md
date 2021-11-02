@@ -69,7 +69,7 @@ The TensorFlow notebook provides with a preliminary script that creates a .jsonl
 Each of the notebooks also contains a preliminary section with a full and detailed analysis and visualization of the data used for the experimentations.  
 
 ### Execution of the code
-In this section the instructions to run the TensorFlow notebook are reported. This notebook has been used to train the models whose training weights are stored in the folder 
+In this section the instructions to run the TensorFlow notebook are reported. This notebook has been used to train the models whose training weights are stored in the project folder [results](results).
 
 **On Google Colaboratory**  
 
