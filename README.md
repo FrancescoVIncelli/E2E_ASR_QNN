@@ -16,8 +16,8 @@ Below the data archives used for the training and testing of the asr models are 
 The two notebook files containing the entire project code show the following structure (some differences related to the deep learning framework used are highlithed)
 
 ```txt
-├── Report                   - Brief introduction of theory, motivations and proposed solution
-├── Dependencies             - Installation of required packages
+├── Report
+├── Dependencies
 ├── Implementation
 │   ├── Data preprocessing      
 │   ├── Data generator and visualization          
