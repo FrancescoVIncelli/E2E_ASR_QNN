@@ -11,7 +11,7 @@ Below the data archives used for the training and testing of the asr models are 
 
 
 ### Installation Procedure
-Create a Dataset folder to store the audio data in. Upload the notebook files in Google Colaboratory or Jupiter environment. Install dependencies following the steps described in section 
+Create a Dataset folder to store the audio data in. Upload the notebook files in *Google Colaboratory* or *Jupiter* environment. Install dependencies following the steps described in *Part 2: External libraries* in the notebook files. 
 
 ### File Structure
 The two notebook files containing the entire project code show the following structure (some differences related to the deep learning framework used are highlithed)
@@ -87,4 +87,8 @@ In this section the instructions to run the TensorFlow notebook are reported. Th
 2. Create a folder `LibriSpeech` including a Train, Valid and Test subfolders in the project directory.
 3. Extract the data from the archives downloaded fromt the link provided in section [Dataset](#dataset) and put the train, validation and test dataset into the corrsponding subfolders of LibriSpeech directory.
 5. Run the script to create the .jsonl files for train, validation and test set: be aware to change the name of the desired data set (train, validation, test) before to run the script.
-6. Run the other sections of the notebook to train the models and evaluate the results for each experiments.
+6. Run the other sections of the notebook to train the models and evaluate the results for each experiments.  
+
+### Limitations
+Due to the huge amount of data, the depth and complexity of the neural models and the preprocessing procedure required by quaternion models, through the multiple concatenation of extracted features in the same input data point, also training on the GPUs provided by Google Colaboratory, the computational performances are not so fine.  
+Possible improvements can be achieved by reducing the cardinality of th dataset and filtering the input data, for instance by discarding audio file having length greather than a theshold.
