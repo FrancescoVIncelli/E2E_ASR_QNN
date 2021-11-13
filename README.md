@@ -91,4 +91,4 @@ In this section the instructions to run the TensorFlow notebook are reported. Th
 
 ### Limitations
 Due to the huge amount of data, the depth and complexity of the neural models and the preprocessing procedure required by quaternion models, through the multiple concatenation of extracted features in the same input data point, also training on the GPUs provided by Google Colaboratory, the computational performances are not so fine.  
-Possible improvements can be achieved by reducing the cardinality of th dataset and filtering the input data, for instance by discarding audio file having length greather than a theshold.
+Possible improvements can be achieved by reducing the cardinality of the dataset and filtering the input data, for instance, by discarding the audio file having length greather than a theshold.
