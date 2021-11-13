@@ -11,6 +11,7 @@ Below the data archives used for the training and testing of the asr models are 
 
 
 ### Installation Procedure
+Create a Dataset folder to store the audio data in. Upload the notebook files in Google Colaboratory or Jupiter environment. Install dependencies following the steps described in section 
 
 ### File Structure
 The two notebook files containing the entire project code show the following structure (some differences related to the deep learning framework used are highlithed)
